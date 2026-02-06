@@ -28,7 +28,6 @@ const effortFactors = [
   "Número de VLANs e nível de segmentação existente",
   "Quantidade de túneis VPN e dependências entre unidades",
   "Disponibilidade de janelas de manutenção",
-  "Necessidade de treinamento da equipe local",
   "Documentação existente sobre a configuração atual",
   "Criticidade operacional e tolerância a interrupções",
 ];

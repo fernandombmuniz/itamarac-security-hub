@@ -1,11 +1,9 @@
 import { Network, Building2, Users, AlertTriangle } from "lucide-react";
 
 const units = [
-  { name: "Matriz", location: "Recife - PE" },
-  { name: "Filial 01", location: "Caruaru - PE" },
-  { name: "Filial 02", location: "Petrolina - PE" },
-  { name: "Filial 03", location: "João Pessoa - PB" },
-  { name: "Filial 04", location: "Natal - RN" },
+  { name: "Matriz Itamaracá", location: "Recife - PE" },
+  { name: "Unidade A", location: "Atalaia" },
+  { name: "Unidade B", location: "Conecta" },
 ];
 
 const concepts = [
@@ -54,15 +52,15 @@ export function ContextoSection() {
                 <div className="w-10 h-10 rounded-full bg-primary/20 mx-auto mb-2 flex items-center justify-center">
                   <Building2 className="w-5 h-5 text-primary" />
                 </div>
-                <p className="font-semibold text-foreground">Matriz</p>
+                <p className="font-semibold text-foreground">Matriz Itamaracá</p>
                 <p className="text-xs text-muted-foreground">Recife - PE</p>
               </div>
             </div>
 
             {/* Connection lines */}
             <div className="flex justify-center mb-4">
-              <div className="grid grid-cols-4 gap-4 max-w-3xl">
-                {[1, 2, 3, 4].map((i) => (
+              <div className="grid grid-cols-2 gap-16 max-w-md">
+                {[1, 2].map((i) => (
                   <div key={i} className="flex flex-col items-center">
                     <div className="h-8 w-px bg-primary/40" />
                     <div className="w-2 h-2 rounded-full bg-primary/60" />
@@ -73,7 +71,7 @@ export function ContextoSection() {
             </div>
 
             {/* Branch nodes */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            <div className="grid grid-cols-2 gap-8 max-w-md mx-auto">
               {units.slice(1).map((unit, index) => (
                 <div key={unit.name} className="diagram-node">
                   <p className="font-medium text-foreground text-sm">{unit.name}</p>

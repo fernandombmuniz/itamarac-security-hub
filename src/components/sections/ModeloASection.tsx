@@ -1,11 +1,9 @@
 import { LayoutGrid, Shield, Building2 } from "lucide-react";
 
 const units = [
-  { name: "Matriz", location: "Recife" },
-  { name: "Filial 01", location: "Caruaru" },
-  { name: "Filial 02", location: "Petrolina" },
-  { name: "Filial 03", location: "João Pessoa" },
-  { name: "Filial 04", location: "Natal" },
+  { name: "Matriz Itamaracá", location: "Recife" },
+  { name: "Unidade A", location: "Atalaia" },
+  { name: "Unidade B", location: "Conecta" },
 ];
 
 export function ModeloASection() {
