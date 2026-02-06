@@ -65,25 +65,27 @@ export function DecisaoSection() {
             </div>
 
             {/* Logos as partnership representation */}
-            <div className="card-presentation">
-              <div className="flex items-center justify-center gap-6">
+            <div className="card-presentation py-8">
+              <p className="text-center text-sm text-muted-foreground mb-6">
+                Parceria para evolução da segurança de rede
+              </p>
+              <div className="flex items-center justify-center gap-8 bg-secondary/30 rounded-xl p-6 mx-auto max-w-md">
                 <img 
                   src={logoConcierge} 
                   alt="Concierge Segurança Digital" 
-                  className="h-14 object-contain"
+                  className="h-12 object-contain"
                 />
-                <div className="flex items-center gap-2 text-primary">
-                  <ArrowRight className="w-5 h-5" />
-                  <ArrowRight className="w-5 h-5 -ml-3" />
+                <div className="flex items-center text-primary">
+                  <ArrowRight className="w-6 h-6" />
                 </div>
                 <img 
                   src={logoItamaraca} 
                   alt="Itamaracá Transportes" 
-                  className="h-12 object-contain"
+                  className="h-10 object-contain"
                 />
               </div>
-              <p className="text-center text-sm text-muted-foreground mt-4">
-                Parceria para evolução da segurança de rede
+              <p className="text-center text-xs text-muted-foreground mt-4">
+                Concierge protegendo Itamaracá Transportes
               </p>
             </div>
           </div>

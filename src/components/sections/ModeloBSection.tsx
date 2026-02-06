@@ -16,10 +16,8 @@ const considerations = [
 ];
 
 const branches = [
-  { name: "Filial 01", location: "Caruaru" },
-  { name: "Filial 02", location: "Petrolina" },
-  { name: "Filial 03", location: "João Pessoa" },
-  { name: "Filial 04", location: "Natal" },
+  { name: "Unidade A", location: "Atalaia" },
+  { name: "Unidade B", location: "Conecta" },
 ];
 
 export function ModeloBSection() {
@@ -114,8 +112,8 @@ export function ModeloBSection() {
 
               {/* Connections to spokes */}
               <div className="flex justify-center mb-4">
-                <div className="grid grid-cols-4 gap-8">
-                  {[1, 2, 3, 4].map((i) => (
+                <div className="grid grid-cols-2 gap-16">
+                  {[1, 2].map((i) => (
                     <div key={i} className="flex flex-col items-center">
                       <div className="h-8 w-px bg-primary/40" />
                       <div className="w-2 h-2 rounded-full bg-primary/60" />
@@ -125,7 +123,7 @@ export function ModeloBSection() {
               </div>
 
               {/* Spokes */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 gap-8 max-w-sm mx-auto">
                 {branches.map((branch) => (
                   <div key={branch.name} className="diagram-node text-center">
                     <Building2 className="w-5 h-5 text-muted-foreground mx-auto mb-2" />
