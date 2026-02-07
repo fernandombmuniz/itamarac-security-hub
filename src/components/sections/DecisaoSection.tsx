@@ -69,15 +69,12 @@ export function DecisaoSection() {
               <p className="text-center text-sm text-muted-foreground mb-6">
                 Parceria para evolução da segurança de rede
               </p>
-              <div className="flex items-center justify-center gap-8 bg-secondary/30 rounded-xl p-6 mx-auto max-w-md">
+              <div className="flex items-center justify-center gap-6 bg-secondary/30 rounded-xl p-8 mx-auto">
                 <img 
                   src={logoConcierge} 
                   alt="Concierge Segurança Digital" 
-                  className="h-12 object-contain"
+                  className="h-10 object-contain"
                 />
-                <div className="flex items-center text-primary">
-                  <ArrowRight className="w-6 h-6" />
-                </div>
                 <img 
                   src={logoItamaraca} 
                   alt="Itamaracá Transportes" 

@@ -39,12 +39,12 @@ export function Header({ currentSection, totalSections }: HeaderProps) {
           />
         </div>
 
-        <nav className="hidden lg:flex items-center gap-1">
-          {sections.slice(0, 7).map((section, index) => (
+        <nav className="hidden lg:flex items-center gap-0.5">
+          {sections.map((section, index) => (
             <button
               key={section.id}
               onClick={() => scrollToSection(section.id)}
-              className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
+              className={`px-2 py-1.5 text-xs rounded-md transition-colors whitespace-nowrap ${
                 currentSection === index
                   ? "text-primary bg-primary/10"
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
@@ -53,7 +53,6 @@ export function Header({ currentSection, totalSections }: HeaderProps) {
               {section.label}
             </button>
           ))}
-          <span className="text-muted-foreground px-1">...</span>
         </nav>
 
         <div className="flex items-center gap-4">
